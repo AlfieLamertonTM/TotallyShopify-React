@@ -27,6 +27,7 @@
   min-height: 70vh;
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -50,6 +51,7 @@
   border-radius: 5px;
   padding: 10px;
   margin-top: 8px;
+  max-width: 100px;
 }
 
 .silly {
@@ -124,8 +126,35 @@
   margin-top: 1rem;
   padding: 1rem;
   background-color: rgb(233, 233, 233);
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.navbar {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #001b50;
+  background-color: #001b50;
+}
+.navbar a {
+  font-size: large;
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
 }

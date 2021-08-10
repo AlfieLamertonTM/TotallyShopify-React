@@ -7,7 +7,7 @@ function NewItem(props) {
     const [name, setName] = useState('')
     const [quantity, setQuantity] = useState(0)
     const [image, setImage] = useState('')
-    const [id, setId] = useState(props.products)
+    const [id, setId] = useState(props.products.length)
 
     const handleChange = (e, field) => {
         console.log(e.target.value)
